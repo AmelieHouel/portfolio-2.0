@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+@font-face {
+	font-family: "Big john pro";
+	src: url("/assets/fonts/bigjohnpro-bold.otf") format("otf"),
+		url("assets/fonts/bigjohnpro-bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+	font-family: "Big john pro";
+	src: url("/assets/fonts/bigjohnpro-light.otf") format("otf"),
+		url("assets/fonts/bigjohnpro-light.woff") format("woff");
+	font-weight: lighter;
+	font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+	font-family: "Big john pro";
+	src: url("/assets/fonts/bigjohnpro-regular.otf") format("otf"),
+		url("assets/fonts/bigjohnpro-regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+  font-family: "Big john pro", sans-serif;
+}
+
+.flex-row {display: flex; flex-direction: row;}
+.flex-column {display: flex; flex-direction: column;}
+.center {justify-content: center; align-items: center;}
+.wrap { flex-wrap: wrap;}
+
+.btn {
+	padding: 10px 30px;
+  background-color: #afd2e9;
   color: white;
+	border-radius: 10px;
+	border: none;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navigation {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	width: 40vw;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	bottom: 0;
+	width: 98%;
+	padding: 15px;
+}
+
+.img {
+	width: 180px;
+	height: auto;
+	margin: 10px;
+}
+
+input {
+	width: 210px;
+ 	height: 42px;
+	border: 2px solid #E6E6E6;
+	border-radius: 10px;
+}
+
+.contact-container {
+	border: 3px solid #919FC5;
+	padding: 20px 40px;
+	width: 280px;
+	height: 480px;
+	border-radius: 30px;
+	justify-content: space-evenly;
+	margin: 10px;
+}
+
+.big-container {
+	border: 3px solid #919FC5;
+	border-radius: 20px;
+	justify-content: space-evenly;
+	padding: 20px;
 }
